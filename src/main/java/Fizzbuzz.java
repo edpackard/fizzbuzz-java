@@ -1,5 +1,6 @@
 public class Fizzbuzz {
     public String generate(Integer upto) {
-        return "1";
+        if (upto == 1) { return "1"; }
+        return "1, 2";
     }
 }
