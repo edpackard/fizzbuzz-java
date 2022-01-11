@@ -15,4 +15,12 @@ public class FizzbuzzTest {
         String result = subject.generate(2);
         assertEquals("1, 2", result);
     }
+
+    @Test
+    void testGenerateListsNumbersUpToThree() {
+        Fizzbuzz subject = new Fizzbuzz();
+        String result = subject.generate(3);
+        assertEquals("1, 2, Fizz", result);
+    }
+
 }
