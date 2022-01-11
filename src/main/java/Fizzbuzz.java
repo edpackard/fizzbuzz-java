@@ -1,11 +1,16 @@
 public class Fizzbuzz {
     public String generate(Integer upTo) {
-        if (upTo == 1) {
-            return "1";
-        } else if (upTo == 2) {
-            return "1, 2";
-        } else {
-            return "1, 2, Fizz";
+        String returnString = "";
+        for (int i = 1; i <= upTo; i++) {
+            if (i % 3 == 0) {
+                returnString = returnString.concat("Fizz");
+            } else {
+                returnString += i;
+            }
+            if (i != upTo) {
+                returnString = returnString.concat(", ");
+            }
         }
+        return returnString;
     }
 }
